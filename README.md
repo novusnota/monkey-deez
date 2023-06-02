@@ -1,13 +1,8 @@
-<div align="center">
+# CLOSED in favour of https://github.com/ThePrimeagen/ts-rust-zig-deez
 
-  <h1>Degens Interpreter Competition (DIC)</h1>
-  <h5>Community-maintained version</h5>
-  <h5>Based on the awesome book "Writing An Interpreter In Go" by Thorsten Ball</h5>
-  <h6><a href="https://interpreterbook.com/">Use the code THEPRIMEAGEN for 30% off</a>. ThePrimeagen receives no financial incentive for this work. It's for you!</h6>
+See: https://github.com/novusnota/monkey-deez/issues/7#issue-1738235403
 
-![Work In Progress](https://img.shields.io/badge/Work%20In%20Progress-orange?style=for-the-badge)
-
-</div>
+---
 
 ## Contributing
 
