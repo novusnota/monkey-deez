@@ -1,0 +1,14 @@
+# Global code owner
+* @novusnota
+
+# DevOps & Maintainance
+/.github/  @novusnota
+
+# Core implementations, like bash/ or rust/ are maintained collectively via PRs.
+# Every code owner of a particular implementation can help with that, but in any case
+# @novusnota will be reviewing PRs daily, from 18:00 to 20:00 UTC+0.
+
+# Code Owners of particular implementations
+/c-boreddad/      @boreddad
+/elixir-shyryan/  @ryanwinchester
+
