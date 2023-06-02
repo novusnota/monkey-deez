@@ -8,6 +8,7 @@
 
 typedef struct{
     char* input;
+    size_t input_len;
     size_t position;
     size_t read_position;
     uint8_t ch;
@@ -15,5 +16,6 @@ typedef struct{
 
 extern Lexer* lexer_new(char* input);
 extern Token* lexer_next_token(Lexer* l);
+extern void lexer_free_token(Token* tok);
 
 #endif /*!__LEXER_H__*/

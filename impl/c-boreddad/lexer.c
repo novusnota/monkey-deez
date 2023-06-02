@@ -17,6 +17,7 @@ Lexer* lexer_new(char* input)
         return NULL;
     }
 
+    l->input_len = strlen(input);
     l->input = input;
 
     lexer_read_char(l);
@@ -82,7 +83,7 @@ char* read_number(Lexer* l)
 void lexer_read_char(Lexer* l)
 {
     size_t len;
-    len = strlen(l->input);
+    len = l->input_len;
     if (l->read_position >= len)
     {
         l->ch = 0;
@@ -106,7 +107,7 @@ void skip_white_space(Lexer* l)
 
 char peek_char(Lexer* l)
 {
-    if (l->read_position >= strlen(l->input))
+    if (l->read_position >= l->input_len)
     {
         return 0;
     }
@@ -234,7 +235,7 @@ Token* lexer_next_token(Lexer* l)
         lexer_read_char(l);
         return tok;
     }
-    if ((l->ch == 0) || (l->position > (strlen(l->input))))
+    if ((l->ch == 0) || (l->position > l->input_len))
     {
         tok->literal = "";
         tok->type = EOFT;
@@ -266,4 +267,17 @@ Token* lexer_next_token(Lexer* l)
     tok->type = EOFT;
     lexer_read_char(l);
     return tok;
+}
+
+void lexer_free_token(Token* tok)
+{
+    if ((tok->type == IDENT) || (tok->type == FUNCTION)
+            || (tok->type == INT) || (tok->type == LET)
+            || (tok->type == TRUE) || (tok->type == FALSE)
+            || (tok->type == IF) || (tok->type == ELSE)
+            || (tok->type == RETURN))
+    {
+        free(tok->literal);
+    }
+    free(tok);
 }
