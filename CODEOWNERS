@@ -8,6 +8,9 @@
 # Every code owner of a particular implementation can help with that, but in any case
 # @novusnota will be reviewing PRs daily, from 18:00 to 20:00 UTC+0.
 
+# Core implementations
+/impl/fsharp/                    @meenzen @kram1138
+
 # Code Owners of particular implementations
 /impl/bash-aretrosen/            @aretrosen
 /impl/bash-vgel/                 @vgel
@@ -24,7 +27,6 @@
 /impl/elixir-ryanwinchester/     @ryanwinchester
 /impl/erlang-mikimaine/          @mikimaine
 /impl/fortran-greuben92/         @greuben92
-/impl/fsharp-meenzen/            @meenzen
 /impl/go-GiorgosAthanasopoulos/  @GiorgosAthanasopoulos
 /impl/haskell-newmaidumosa/      @newmaidumosa
 /impl/haxe-koteelok/             @koteelok
