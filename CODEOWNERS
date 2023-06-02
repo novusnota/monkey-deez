@@ -9,10 +9,12 @@
 # @novusnota will be reviewing PRs daily, from 18:00 to 20:00 UTC+0.
 
 # Code Owners of particular implementations
+/bash-aretrosen/          @aretrosen
 /bash-vgel/               @vgel
 /c-boreddad/              @boreddad
 /c-zivlakmilos/           @zivlakmilos
 /chatgpt-unconv/          @unconv
+/cobol-kkard2             @kkard2
 /crystal-devnote-dev/     @devnote-dev
 /csharp-MarioGK/          @MarioGK
 /dart-shreyassanthu77/    @shreyassanthu77
@@ -23,8 +25,10 @@
 /haskell-newmaidumosa/    @newmaidumosa
 /java-xNaCly/             @xNaCly
 /julia-rezaarezvan/       @rezaarezvan
+/kotlin-ekgame/           @ekgame
 /kotlin-PossessedC0bra/   @PossessedC0bra
 /kotlin-hermannm/         @hermannm
+/lua-aretrosen/           @aretrosen
 /nim-Echriser/            @Echriser
 /nix-figsoda/             @figsoda
 /odin-jon-lipstate/       @jon-lipstate
