@@ -19,13 +19,13 @@ And this is a community-maintained repo, meaning that you can add your own imple
 
 ### Participating
 
-For every language there would be one collective contribution folder in the root of the repo (say, for TypeScript — `typescript/`). It would be maintained NOT by any particular Code Owner, but by PRs and collective suggestions. @novusnota will be reviewing PRs daily, from 18:00 to 20:00 UTC+0.
+For every language there would be one collective contribution folder (say, for TypeScript — `impl/typescript/`). It would be maintained NOT by any particular Code Owner, but by PRs and collective suggestions. @novusnota will be reviewing PRs daily, from 18:00 to 20:00 UTC+0.
 
 If you wish to create your own implementation and maintain it yourself, do the following:
 
-1. Start by `cp -r .github/LANG_TEMPLATE/ langname-username`. Say, `c-boreddad`.
+1. Start by `cp -r .github/LANG_TEMPLATE/ impl/langname-username`. Say, your langname is `C` and your username is `boreddad`, then the command is `cp -r .github/LANG_TEMPLATE/ impl/c-boreddad`.
 2. Add your implementation: at the very least add the lexer.
-3. Add yourself to CODEOWNERS file. For example: `/c-boreddad/  @boreddad`.
+3. Add yourself to CODEOWNERS file. For example: `/impl/c-boreddad/  @boreddad`.
 4. Make a PR to this repo!
 
 After that you'll be granted write access by @novusnota, but only to your implementation folder.
