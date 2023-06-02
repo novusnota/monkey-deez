@@ -1,6 +1,7 @@
 module Main where
 
 import Lexer.Basic qualified
+import Lexer.Lens qualified
 import Lexer.Monad qualified
 import Lexer.Parsec qualified
 import Lexer.State qualified
@@ -15,6 +16,7 @@ tests =
         , TestLabel "Lexer.Monad" (lexerTests Lexer.Monad.tokenize)
         , TestLabel "Lexer.State" (lexerTests Lexer.State.tokenize)
         , TestLabel "Lexer.Parsec" (lexerTests Lexer.Parsec.tokenize)
+        , TestLabel "Lexer.Lens" (lexerTests Lexer.Lens.tokenize)
         ]
 
 main :: IO ()
