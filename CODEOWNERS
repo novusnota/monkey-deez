@@ -15,8 +15,10 @@
 /impl/c-zivlakmilos/           @zivlakmilos
 /impl/chatgpt-unconv/          @unconv
 /impl/cobol-kkard2             @kkard2
+/impl/clojure-Vikasg7          @Vikasg7
 /impl/crystal-devnote-dev/     @devnote-dev
 /impl/csharp-MarioGK/          @MarioGK
+/impl/d-ToraKuma42/            @ToraKuma42
 /impl/dart-shreyassanthu77/    @shreyassanthu77
 /impl/elixir-ryanwinchester/   @ryanwinchester
 /impl/erlang-mikimaine/        @mikimaine
@@ -35,10 +37,14 @@
 /impl/nix-figsoda/             @figsoda
 /impl/odin-jon-lipstate/       @jon-lipstate
 /impl/pascal-attilakapostyak/  @attilakapostyak
+/impl/reason-lessp/            @lessp
 /impl/php-wartab/              @wartab
+/impl/prolog-Kaixi26/          @Kaixi26
 /impl/python-BatikanHyt/       @BatikanHyt
 /impl/roc-bhansconnect/        @bhansconnect
 /impl/ruby-ayatofrench/        @ayatofrench
 /impl/swift-marcusziade/       @marcusziade
 /impl/typescript-pIneple/      @pIneple
 /impl/vlang-FalconEthics/      @FalconEthics
+/impl/unison-cobaltburn/       @cobaltburn
+/impl/x64_nasm-Sirraide/       @Sirraide
