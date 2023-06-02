@@ -1,17 +1,16 @@
-# Latest Ubuntu image
-FROM ubuntu:latest
+FROM mcr.microsoft.com/dotnet/sdk:7.0-jammy
 
 # Make a working directory, as it would be binded with the current language one
 WORKDIR /deez
 
 # Basic system-level dependencies
 RUN apt-get update && apt install -y make git curl
-    # TODO: these are examplary, change to those you need:
-    # apt install -y software-properties-common build-essential && \
-    # add-apt-repository --yes ppa:neovim-ppa/unstable && \
-    # apt-get install -y neovim
 
-# TODO: Add extra dependencies, if needed
+ENV PATH="${PATH}:/root/.dotnet/tools"
+
+# Formatter and linter
+RUN dotnet tool install -g fantomas && \
+    dotnet tool install -g dotnet-fsharplint
 
 # Commands for docker run
 CMD make clean && \

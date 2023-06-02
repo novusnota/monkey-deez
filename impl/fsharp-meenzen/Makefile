@@ -21,29 +21,19 @@ docker-ready: docker-build
 
 clean:
 	@echo "===> Cleaning"
-	# TODO: replace this line with your cleaning commands
+	dotnet restore
+	dotnet clean --verbosity minimal --configuration Release
 
 fmt:
 	@echo "===> Formatting"
-	# TODO: replace this line with your formatting commands
+	fantomas Monkey/*.fs Monkey/*.fsi Monkey.Tests/*.fs
 
 lint:
 	@echo "===> Linting"
-	# TODO: replace this line with your linting commands
+	dotnet fsharplint lint Monkey/Monkey.fsproj
+	dotnet fsharplint lint Monkey.Tests/Tests.fs
 
-test: test-lexer test-ast test-parser
-	@echo "===> Testing EVERYTHING"
-	# TODO: replace this line with your testing commands
-
-test-lexer:
-	@echo "===> Testing lexer"
-	# TODO: replace this line with your lexer testing commands
-
-test-ast:
-	@echo "===> Testing AST"
-	# TODO: replace this line with your AST testing commands
-
-test-parser:
-	@echo "===> Testing parser"
-	# TODO: replace this line with your parser testing commands
+test:
+	@echo "===> Testing"
+	dotnet test -c Release
 
